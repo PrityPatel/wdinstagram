@@ -30,6 +30,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
+// Route for showing a new entry page
+router.get('/entries/new', function(request, response, next){
+  Entry.new(function(eror) {
+    if (error) return response.send(error);
+    response.render('new', {title: 'New Entry'});
+  });
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
