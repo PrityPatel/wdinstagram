@@ -61,5 +61,10 @@ app.use(function(err, req, res, next) {
   });
 });
 
+//Server
+var server = http.createServer(app);
+server.listen(port);
+console.log("wdinstagram_app is happening on port" + port);
+
 
 module.exports = app;
