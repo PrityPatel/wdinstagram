@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon app.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -11,7 +11,21 @@
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "mongoose": "^4.1.1",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "description": "<img alt=\"A picture of nice food taken by a distant friend.\" src=\"public/images/instagramming-food.jpg\" width=\"700px\"/>",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrityPatel/wdinstagram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrityPatel/wdinstagram/issues"
+  },
+  "homepage": "https://github.com/PrityPatel/wdinstagram#readme"
 }
