@@ -17,9 +17,9 @@ module.exports.renderNewEntries = function(req, res, next) {
 // POST 'entries' - adds a new entry and redirects to index
 module.exports.postNewEntry = function(req, res, next) {
   var entry = new Entry();
-  entry.url = req.body.url;
-  entry.user = req.body.user;
-  entry.date = req.body.date;
+  entry.photo_url = req.body.photo_url;
+  entry.author = req.body.author;
+  entry.date_taken = req.body.date_taken;
 
   entry.save();
   res.redirect('/entries');

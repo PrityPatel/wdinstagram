@@ -4,11 +4,11 @@ var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 
 var EntrySchema = new mongoose.Schema({
-  url: String,
-  user: {
+  photo_url: String,
+  author: {
     type: mongoose.Schema.Types.ObjectId, ref: 'User'
   },
-  date: Date
+  date_taken: Date
 });
 
 var Entry = mongoose.model('Entry', EntrySchema);
