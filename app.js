@@ -64,11 +64,11 @@ app.use(function(err, req, res, next) {
   });
 });
 
-// Route for showing a new entry page
-router.get('/entries/new', function(request, response, next){
-  Entry.new(function(eror) {
+//Index of entries
+router.get("/entries", function(request, response, next) {
+  Entry.find(function(error, entries) {
     if (error) return response.send(error);
-    response.render('new', {title: 'New Entry'});
+    response.send(entries);
   });
 });
 
