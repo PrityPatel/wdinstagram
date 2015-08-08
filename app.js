@@ -12,12 +12,6 @@ var port = 3000;
 
 mongoose.connect('mongodb://localhost/wdinstagram_app');
 
-//sourcing models
-require('./models/user');
-var User = mongoose.model('User');
-require('./models/entry');
-var Entry = mongoose.model('Entry');
-
 
 
 var routes = require('./routes/index');
