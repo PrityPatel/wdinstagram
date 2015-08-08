@@ -64,6 +64,14 @@ app.use(function(err, req, res, next) {
   });
 });
 
+// Route for showing a new entry page
+router.get('/entries/new', function(request, response, next){
+  Entry.new(function(eror) {
+    if (error) return response.send(error);
+    response.render('new', {title: 'New Entry'});
+  });
+});
+
 //Server
 var server = http.createServer(app);
 server.listen(port);
