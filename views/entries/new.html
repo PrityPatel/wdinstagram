@@ -4,32 +4,39 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
-  <link rel="stylesheet" href="">
+<link href="../../public/stylesheets/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <% include ../partials/head %>
 </head>
-<body>
+<body class="container">
+<div class="jumbotron">
+<h1>WDInstagram</h1>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-8 col-md-offset-2 newFormDiv">
+    <div class="span9 newPageForm">
+    <form class="well" id="formNew" method="POST" action="/entries/new">
+      <fieldset>
+        <label>Caption:</label>
+        <input name="caption" class="post-caption" value=""/>
+      </fieldset>
+      <fieldset>
+        <label>URL:</label>
+        <input name="URL" class="post-URL"></input>
+      </fieldset>
+      <fieldset>
+        <label>Author:</label>
+        <input name="Author" class="post-author"></input>
+      </fieldset>
+      <fieldset>
+        <input class="btn btn-primary btn-large" type="submit" value="Save" />
+      </fieldset>
+    </form>
+  </div>
+  </div>
+</div>
 
- <div class="jumbotron">
-        <div class="container">
-            <h1>Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational
-                website. It includes a large callout called a jumbotron and three
-                supporting pieces of content. Use it as a starting point to create
-                something more unique.</p>
-            <p>
-                <a class="btn btn-primary btn-lg" role="button">Learn more
-                    &raquo;</a>
-            </p>
-        </div>
-    </div>
+</body>
+<div class="backgroundNew"></div>
 
-    <div class="container">
-        <% include content %>
-        <hr>
-
-        <% include footer %>
-    </div>
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></body>
 </html>
