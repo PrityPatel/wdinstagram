@@ -1,5 +1,7 @@
 // Entry model
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
 
 var EntrySchema = new mongoose.Schema({
   url: String,
