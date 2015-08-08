@@ -6,12 +6,15 @@ var entriesController = require('../controllers/entries');
 router.get('/', entriesController.renderLanding);
 
 //Index
-router.get('/entries', function(req, res, next){
-  Entry.find(function(error, entries){
-    if (error) return res.send(error);
-    res.render('index', {title: 'entries', });
-  });
-});
+router.get('/entries', entriesController.renderEntriesIndex);
+
+//NEW
+router.get('/entries/new', entriesController.renderNewEntries);
+
+//SHOW
+router.get('/entries/:id', entriesController.renderShowEntry);
+
+
 
 
 module.exports = router;
