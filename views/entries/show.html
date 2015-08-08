@@ -13,25 +13,22 @@ show.html
 <div class="jumbotron">
 <h1>WDInstagram</h1>
 </div>
+
 <div class="row">
-  <div class="col-xs-12 col-md-8 col-md-offset-2 newFormDiv">
-    <div class="span9 newPageForm">
-  div
-    <img src=" <%=entry.url %> "/><br>
+
+  <div class="col-xs-12 col-md-8 col-md-offset-2 showDiv">
+    <br><img src=" <%=entry.url %> "/><br>
+    <button class="btn btn-primary">&#10084;</button>
+    <button class="btn btn-warning">report</button>
     <p>entry.caption</p><Br>
-    <p>entry.author</p>
+    <p>entry.author</p><br>
     <ul>
-      <li>
-       a(href='/bikes/#{bike.id}/edit') Edit this bike
-      </li>
-      <li>
-        form(method='POST' action ='/bikes/#{bike.id}?_method=DELETE')
-          button(type= 'submit') Delete bike
-      </li>
-    a(href='/beers') Back to home
+   <button class="btn btn-danger" type="submit">Delete</button>
+
+   <button class="btn btn-success" type="link">Back to home</button>
     </ul>
   </div>
-  </div>
+
 </div>
 
 </body>
