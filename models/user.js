@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 var Entry = mongoose.model("Entry");
 
 var UserSchema = new mongoose.Schema({
-  name: String,
+  author: String,
   entries: [Entry.schema]
 });
 
