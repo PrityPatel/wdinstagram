@@ -75,3 +75,52 @@ a {
   background-color: white;
   border-radius: 3px;
   border: 2px solid black;
+}
+
+#container {
+  width: 860px;
+  height: 500px;
+  margin: 200px auto;
+}
+
+#bottomHalf {
+  width: 100%;
+  height: 500px;
+  background-color: #FFFFFF;
+  position: static;
+  margin-top: -550px;
+}
+
+#content {
+  position: relative;
+  margin: 0 auto;
+}
+
+#leftDiv {
+  width: 318px;
+  float: left;
+}
+
+#topRight {
+  width: 504px;
+  float: right;
+}
+
+#rightDiv {
+  background-image: url("../images/frame.png");
+  background-repeat: no-repeat;
+  width: 504px;
+  height: 512px;
+  float: right;
+  padding: 25px 50px 0 50px;
+}
+
+h3 {
+  font-family: 'freight-sans-pro', 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: #3f729b;
+  font-weight: bold;
+}
+
+p {
+  font-size: 17.5px;
+}
