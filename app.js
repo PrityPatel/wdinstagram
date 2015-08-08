@@ -12,6 +12,7 @@ var port = 3000;
 
 mongoose.connect("mongodb://localhost/wdinstagram_app");
 
+
 var routes = require('./routes/index');
 
 
@@ -30,9 +31,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
-//Source in models
-var User = require("./models/User");
-var Entry = require("./models/Entry");
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
