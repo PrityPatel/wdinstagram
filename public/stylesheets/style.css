@@ -124,3 +124,45 @@ h3 {
 p {
   font-size: 17.5px;
 }
+
+/**************************
+ **  Footer Bar Styling  **
+ **************************/
+footer {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+#footerContent {
+  width: 860px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+ul {
+  style: none;
+  position: relative;
+  margin: 0 auto;
+  top: 5px;
+}
+
+li {
+  font-family: 'freight-sans-pro', 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  display: inline;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 19px 19px;
+  color: #3f729b;
+}
+
+#copyright {
+  font-family: 'freight-sans-pro', 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  width: 135px;
+  position: relative;
+  margin: 8px auto;
+}
