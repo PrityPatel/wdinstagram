@@ -35,3 +35,43 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.newPageForm{
+  text-align: center;
+
+}
+
+.newFormDiv{
+}
+
+.container{
+  height: 200px;
+  position: static;
+  background-color: #3f729b;
+
+}
+
+.backgroundNew{
+  background-color: white;
+  height: 300px;
+  position: static;
+  margin-top: 100px;
+  opacity: 0.9;
+  width: 113%;
+  margin-left: -7%;
+}
+
+.well{
+  background-color: none;
+}
+
+#formNew{
+  background-color: white;
+  border: 2px solid black;
+}
+
+.showDiv{
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid black;
+}

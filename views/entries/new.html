@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+<link href="../../public/stylesheets/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <% include ../partials/head %>
+</head>
+<body class="container">
+<div class="jumbotron">
+<h1>WDInstagram</h1>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-8 col-md-offset-2 newFormDiv">
+    <div class="span9 newPageForm">
+      <h1>Post New Image</h1>
+    <form class="well" id="formNew" method="POST" action="/entries/new">
+      <fieldset>
+        <label>Caption:</label>
+        <input name="caption" class="post-caption" value=""/>
+      </fieldset>
+      <fieldset>
+        <label>URL:</label>
+        <input name="URL" class="post-URL"></input>
+      </fieldset>
+      <fieldset>
+        <label>Author:</label>
+        <input name="Author" class="post-author"></input>
+      </fieldset>
+      <fieldset>
+        <input class="btn btn-primary btn-large" type="submit" value="Save" />
+      </fieldset>
+    </form>
+  </div>
+  </div>
+</div>
+
+</body>
+<div class="backgroundNew"></div>
+
+</html>
