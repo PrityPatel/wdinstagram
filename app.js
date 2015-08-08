@@ -64,13 +64,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-//Index of entries
-router.get("/entries", function(request, response, next) {
-  Entry.find(function(error, entries) {
-    if (error) return response.send(error);
-    response.send(entries);
-  });
-});
+
 
 //Server
 var server = http.createServer(app);
