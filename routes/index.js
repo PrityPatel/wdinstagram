@@ -3,6 +3,6 @@ var router = express.Router();
 var entriesController = require('../controllers/entries');
 
 /* GET '/' - render entries index view */
-router.get('/', entriesController.renderEntriesIndex);
+router.get('/', entriesController.renderLanding);
 
 module.exports = router;
