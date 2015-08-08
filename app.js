@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
-var mongoose = require ("mongoose");
-var http = require("http");
+var mongoose = require('mongoose');
+var http = require('http');
 var path = require('path');
 var favicon = require('serve-favicon');
 var router = express.Router();
@@ -10,7 +10,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var port = 3000;
 
-mongoose.connect("mongodb://localhost/wdinstagram_app");
+mongoose.connect('mongodb://localhost/wdinstagram_app');
+
+//sourcing models
+require('./models/user');
+var User = mongoose.model('User');
+require('./models/entry');
+var Entry = mongoose.model('Entry');
+
 
 
 var routes = require('./routes/index');
