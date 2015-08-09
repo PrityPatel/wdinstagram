@@ -4,9 +4,7 @@ var Schema = mongoose.Schema;
 
 var EntrySchema = new mongoose.Schema({
   photo_url: String,
-  author: {
-    type: mongoose.Schema.Types.ObjectId, ref: 'User'
-  },
+  author: String,
   date_taken: {
     type: Date,
     default: Date.now
