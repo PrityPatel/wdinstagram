@@ -1,5 +1,5 @@
 // Controller for Entries
-
+var Entry = require('../models/Entry');
 // GET landing page
 module.exports.renderLanding = function(req, res, next) {
   res.render('landing_page', { title: 'WDInstagram Landing Page' });
