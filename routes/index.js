@@ -12,7 +12,7 @@ router.get('/entries', entriesController.renderEntriesIndex);
 router.get('/entries/new', entriesController.renderNewEntries);
 
 // Post new entry route
-router.post('/entries', entriesController.postNewEntry);
+router.post('/entries/new', entriesController.postNewEntry);
 
 //SHOW
 router.get('/entries/:id', entriesController.renderShowEntry);
