@@ -134,7 +134,7 @@ p {
  **************************/
 footer {
   background-color: #ffffff;
-  position: absolute;
+  position: static;
   bottom: 0px;
   width: 100%;
 }
