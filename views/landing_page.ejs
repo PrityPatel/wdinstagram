@@ -8,7 +8,8 @@
   <link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-
+  <div id="bottomHalf"></div>
+  <div id="topHalf"></div>
 
   <div id="container">
     <div id="leftDiv">
@@ -17,6 +18,9 @@
     <div id="topRight">
       <div>
         <img src="images/brand.png" alt="">
+        <div id="homeButton">
+          <a id="homeButtonText" href="http://localhost:3000/entries">HOME</a>
+        </div>
       </div>
     </div>
     <div id="rightDiv">
@@ -41,7 +45,7 @@
     </div>
   </div>
 
-  <div id="bottomHalf"></div>
+
 
   <% include ../views/partials/foot.ejs %>
 
