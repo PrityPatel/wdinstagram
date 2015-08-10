@@ -40,6 +40,10 @@ a:hover {
   text-decoration: none;
 }
 
+hr {
+  width: 90%;
+}
+
 
 .newPageForm{
   text-align: center;
@@ -161,6 +165,69 @@ p {
   font-size: 17.5px;
 }
 
+/*********************
+ **  Index Styling  **
+ *********************/
+
+ .feed {
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #EEEEEE;
+  background-color: #ffffff;
+ }
+
+ .feed img {
+  width: 100%;
+  height: 100%;
+ }
+
+ .author-text {
+  position: relative;
+  float: left;
+  font-family: 'proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  color: #3f729b;
+  top: 10px;
+  left: 5px;
+ }
+
+ .date-text {
+  position: relative;
+  float: right;
+  font-family: 'proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
+  top: -10px;
+  right: 5px;
+ }
+
+.feedLikes {
+  position: relative;
+  left: 30px;
+}
+
+.feedCaptions {
+  position: relative;
+  left: 30px;
+}
+
+.feedComments {
+  position: relative;
+  left: 30px;
+}
+
+.feedCommentArea {
+  position: relative;
+  left: 30px;
+  margin-bottom: 15px;
+  top: -5px;
+}
+
+.feedCommentInput {
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  outline: none;
+  width: 200px;
+}
 /**************************
  **  Footer Bar Styling  **
  **************************/
@@ -230,21 +297,25 @@ li {
   float: left;
 }
 
-#searchBar {
+#addEntry {
   width: 300px;
   height: 30px;
   position: relative;
   margin: 0 auto;
-  top: 25px;
+  top: 31px;
   text-align: center;
+  font-family: 'proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  color: #3f729b;
 }
 
-#search {
+/*#search {
   border: 1px solid #DDDDDD;
   border-radius: 15px;
   outline: none;
   width: 200px;
-}
+}*/
+
 
 #userName {
   width: 300px;
