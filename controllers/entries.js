@@ -27,7 +27,10 @@ module.exports.postNewEntry = function(req, res, next) {
 
 //GET 'entries/id' - renders show one entry
 module.exports.renderShowEntry = function(req, res, next) {
-  res.render('entries/:id', {title: "An Entry"});
+  Entry.findOne({_id: req.params.id}, function(error, entry){
+    if(error) return res.send(error);
+    res.render('entries/show', {title: entry.author, entry: entry});
+  });
 };
 
 
