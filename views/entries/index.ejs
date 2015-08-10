@@ -11,19 +11,23 @@
 </head>
 
 <body>
+  <% include ../partials/navbar.ejs %>
+  <br><br><br>
 
   <% entries.forEach(function(entry){ %>
+  <br><br><br>
       <section class="feed">
       <div class="entry">
-        <span class="author-text"><%=entry.author%></span>
+        <span class="author-text"><%=entry.author%></span><br>
         <span class="date-text"><%=entry.date_taken%></span>
         <hr class="before">
-        <img alt="Entry Image" src="<%=entry.photo_url%>" />
-        <hr class="after">
+        <img alt="Entry Image" src=<%=entry.photo_url%>></span><br><br>
         <span class="likes-text"><i class="fa fa-heart"></i> ... likes</span>
+        <hr class="after">
       </div>
     </section>
   <% }); %>
-
+<br>
+  <% include ../partials/foot.ejs %>
 </body>
 </html>
