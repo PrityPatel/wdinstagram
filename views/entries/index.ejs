@@ -16,25 +16,25 @@
 
   <% entries.forEach(function(entry){ %>
   <br><br><br>
-      <section class="feed">
-        <div class="entry">
-          <span class="author-text"><a href="#"><%=entry.author%></a></span><br>
-          <span class="date-text"><%=entry.date_taken%></span>
-          <!-- <hr class="before"> -->
-          <img alt="Entry Image" src=<%=entry.photo_url%>></span><br><br>
-          <span class="feedLikes"> ... likes</span>
-          <div class="feedCaptions">
-            caption
-          </div>
-          <div class="feedComments">
-            comments
-          </div>
-          <hr class="after">
-          <div class="feedCommentArea">
-            <i class="glyphicon glyphicon-heart-empty"></i>
-            <input class="feedCommentInput" type="text" placeholder="Add a comment...">
-          </div>
+    <section class="feed">
+      <div class="entry">
+        <span class="author-text"><a href="#"><%=entry.author%></a></span><br>
+        <span class="date-text"><%=entry.date_taken%></span>
+        <!-- <hr class="before"> -->
+        <img alt="Entry Image" src=<%=entry.photo_url%>></span><br><br>
+        <span class="feedLikes"> ... likes</span>
+        <div class="feedCaptions">
+          caption
         </div>
+        <div class="feedComments">
+          comments
+        </div>
+        <hr class="after">
+        <div class="feedCommentArea">
+          <i class="glyphicon glyphicon-heart-empty"></i>
+          <input class="feedCommentInput" type="text" placeholder="Add a comment...">
+        </div>
+      </div>
     </section>
   <% }); %>
 <br>

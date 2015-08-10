@@ -8,27 +8,32 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <% include ../partials/head %>
 </head>
-<body class="container">
-<div class="jumbotron">
-<h1>WDInstagram</h1>
-</div>
+<body>
+  <br><br><br>
+  <% include ../partials/navbar.ejs %>
+  <br><br><br>
+  <section class="feed">
+    <div class="entry">
+      <span class="author-text"><a href="#"><%=entry.author%></a></span><br>
+      <span class="date-text"><%=entry.date_taken%></span>
+      <!-- <hr class="before"> -->
+      <img alt="Entry Image" src=<%=entry.photo_url%>></span><br><br>
+      <span class="feedLikes"> ... likes</span>
+      <div class="feedCaptions">
+        caption
+      </div>
+      <div class="feedComments">
+        comments
+      </div>
+      <hr class="after">
+      <div class="feedCommentArea">
+        <i class="glyphicon glyphicon-heart-empty"></i>
+        <input class="feedCommentInput" type="text" placeholder="Add a comment...">
+      </div>
+    </div>
+  </section>
 
-<div class="row">
-
-  <div class="col-xs-12 col-md-8 col-md-offset-2 showDiv">
-    <br><img src="<%= entry.photo_url %>" /><br>
-    <button class="btn btn-primary">&#10084;</button>
-    <button class="btn btn-warning">report</button>
-    <p> <%= entry.author %> </p><Br>
-    <p> <%= entry.date_taken %> </p><br>
-    <ul>
-   <button class="btn btn-danger" type="submit">Delete</button>
-
-   <button class="btn btn-success" type="link">Back to home</button>
-    </ul>
-  </div>
-
-</div>
+  <% include ../partials/foot.ejs %>
 
 </body>
 <!-- <div class="backgroundNew"></div> -->
