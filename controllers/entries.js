@@ -7,7 +7,10 @@ module.exports.renderLanding = function(req, res, next) {
 
 // GET '/' - renders entries index page
 module.exports.renderEntriesIndex = function(req, res, next) {
-  res.render('entries/index', { title: 'WDInstagram Index' });
+  Entry.find(function(error, entries){
+    if(error) return res.send(error);
+    res.render('entries/index', {title: 'WDInstagram Index', entries: entries});
+  });
 };
 
 // GET 'entries/new' - renders new entry
